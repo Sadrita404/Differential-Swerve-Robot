@@ -1,0 +1,75 @@
+Project Brief: 12-Channel Stepper Driver Carrier PCB
+
+Objective
+
+Design a PCB that hosts up to 12 socketed stepstick driver modules (A4988 or TMC2209, mixed freely per channel) with per-channel microstepping configuration, a single consolidated control interface for STEP/DIR, and a high-current shared motor power bus. The board is a passive carrier: no MCU onboard. Deliverable is a complete KiCad project ready for fab.
+
+Functional Requirements
+
+Driver sockets (x12)
+
+
+Two 1x8 female headers per channel, standard stepstick footprint. Must accept both A4988 and TMC2209 modules without modification.
+Orientation marking on silkscreen (EN pin corner). Wrong insertion destroys drivers, so make this unmissable.
+RST and SLP pins tied together via a solder jumper (default: bridged). This is required for A4988 operation and is safe for TMC2209. Do not hard-trace it: leave the jumper cuttable and route the SLP-position pin (PDN_UART on TMC2209) to an optional labeled pad per channel for future UART use.
+
+
+Microstepping (per channel)
+
+
+3-position DIP switch connecting MS1/MS2/MS3 to VDD. Both driver families have internal pulldowns; no external resistors.
+Silkscreen a microstep truth table for BOTH driver types adjacent to each switch or once in a legend area. The tables differ; label them clearly (A4988 vs TMC2209, note MS3 = SPREAD on TMC2209 and should stay OFF for stealthChop).
+
+
+Enable
+
+
+All 12 EN pins bused together (active low, both families).
+3-pin header: center = EN bus, one side = GND (jumper here = always enabled), other side = breakout to control header for MCU-driven global enable.
+
+
+Control interface
+
+
+2x13 (26-pin) shrouded IDC header carrying 12x STEP, 12x DIR, 1x GND, 1x 5V VDD sense/supply pin. If pin budget is tight, prioritize interleaved GND returns over the VDD pin and move VDD to a separate 2-pin header.
+Consistent channel ordering (CH1–CH12) matching physical socket order; silkscreen the pinout next to the header.
+No series resistors required, but leave 0-ohm/resistor footprints (0603) on STEP lines in case termination is needed later. DNP by default.
+
+
+Logic power (VDD)
+
+
+5V input via 2-pin header or screw terminal, feeding all socket VDD pins.
+Budget: ~200 mA total. 100 nF ceramic at each socket VDD pin.
+Reverse-polarity protection optional; at minimum silkscreen polarity clearly.
+
+
+Motor power (VMOT)
+
+
+Single shared bus, up to 30 V, sized for 12 A continuous (design target ~1 A per channel).
+Driver voltage limits: A4988 max 35 V, TMC2209 max 28 V operating (29 V absolute max). Above 28 V the board is A4988-only. Silkscreen this limit near the power terminal.
+Input: 5.08 mm pitch high-current screw terminal, 16 A+ rated. Consider dual entry (terminals at both ends of the bus) so no single trace segment carries full current.
+Bulk capacitance: 1000 µF 50 V low-ESR at the input. Suggested: Panasonic EEU-FR1H102 (12.5 mm dia) or Nichicon UPW1H102MHD.
+Per channel: 100 µF 50 V low-ESR electrolytic placed directly at the socket VMOT/GND pins (hard requirement, this protects A4988s from inductive spikes) plus 100 nF ceramic. Suggested: Panasonic EEU-FR1H101 (8 × 11.5 mm) or Rubycon 50ZLH100MEFC8X11.5.
+Optional but preferred: blade fuse or polyfuse on VMOT input, TVS diode SMBJ30A across the bus.
+
+
+Motor connectors (x12)
+
+
+JST-XH 4-pin (B4B-XH-A) footprint per channel. The 2.5 mm XH pitch is compatible enough with 2.54 mm headers that either can be populated on the same footprint; confirm this in footprint review.
+Phase pairs labeled on silkscreen (A1 A2 B1 B2, matching the socket's 1A/1B/2A/2B pinout).
+
+
+Layout Requirements
+
+
+Board size target: ~110 × 120 mm, 2×6 channel grid, motor connectors exiting top and bottom edges, IDC header on one side edge, power terminal center-fed between the two rows. Do not shrink below ~100 × 110 mm; the 12 A VMOT pour and per-channel electrolytics need the area. Channel cell budget: ~18 mm pitch × ~50 mm.
+2 oz copper, 2-layer minimum. VMOT as a wide pour on top, solid GND pour on bottom, stitched with vias. Do not neck VMOT below ~4 mm equivalent width anywhere on the main bus.
+Motor phase traces: 1.5–2 mm.
+Channel layout: draw one channel as a hierarchical schematic sheet, instance 12x. Route one channel's local layout, then replicate (KiCad "Replicate Layout" plugin) to keep all 12 identical.
+Physical grouping per channel: socket + DIP switch + electrolytic cap + JST connector in one tight cluster. Electrolytic as close to socket VMOT pins as physically possible.
+Board edges: control IDC header on one edge, motor connectors along the opposite/adjacent edges fanning outward, power terminal(s) central to the VMOT bus, not in a far corner.
+Mounting holes in all four corners, M3.
+Silkscreen: channel numbers, all pinouts, microstep tables, driver orientation, VMOT voltage range, and a warning: "Do not connect/disconnect motors while powered."

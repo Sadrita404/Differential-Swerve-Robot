@@ -1,0 +1,960 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "17bd4d6d-b375-43fb-b1cc-dc17bbbd1fbd")
+	(paper "A3")
+	(lib_symbols
+(symbol "Connector:Screw_Terminal_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "screw terminal"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "TerminalBlock*:*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Screw_Terminal_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.3556 0.508) (xy 0.508 -0.3302)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 0.635)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 -2.54)
+				(radius 0.635)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:D_TVS"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "diode TVS thyrector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "D_TVS_0_1"
+			(polyline
+				(pts
+					(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_TVS_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:C_Polarized"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_Polarized"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "CP_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_Polarized_0_1"
+			(rectangle
+				(start -2.286 0.508)
+				(end 2.286 1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 2.286) (xy -0.762 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 2.794) (xy -1.27 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.286 -0.508)
+				(end -2.286 -1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "C_Polarized_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 60.96 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b15bea3-3a42-418e-b934-28579b5a811d")
+		(property "Reference" "J51"
+			(at 60.96 44.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "VDD_5V_IN"
+			(at 60.96 56.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 60.96 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "1715721"
+			(at 60.96 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 60.96 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1"
+			(uuid "17cf49d6-84fa-4fe5-af47-0712a38fea11")
+		)
+		(pin "2"
+			(uuid "39d8c6a7-a330-49c4-a307-323c0759e714")
+		)
+		(instances
+			(project "12StepperPCB"
+			(path "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/cf368c5f-16d2-4298-b987-03b924d6d080"
+				(reference "J51")
+				(unit 1)
+			)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 137.16 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17337747-4550-40d5-bf65-1384c3bcf3e7")
+		(property "Reference" "J52"
+			(at 137.16 44.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "VMOT_IN_A"
+			(at 137.16 56.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 137.16 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "1711725"
+			(at 137.16 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 137.16 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1"
+			(uuid "c80c8af2-7e13-452a-9a64-11f7f2c61d52")
+		)
+		(pin "2"
+			(uuid "e202f0e9-e778-4911-804d-6e1ae21325e3")
+		)
+		(instances
+			(project "12StepperPCB"
+			(path "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/cf368c5f-16d2-4298-b987-03b924d6d080"
+				(reference "J52")
+				(unit 1)
+			)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 213.36 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38d90d76-6104-4de4-85d4-4d8f3a92e788")
+		(property "Reference" "J53"
+			(at 213.36 44.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "VMOT_IN_B"
+			(at 213.36 56.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 213.36 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "1711725"
+			(at 213.36 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 213.36 50.8 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1"
+			(uuid "35e891fc-d7ed-43a6-85a5-df58b4a23e1e")
+		)
+		(pin "2"
+			(uuid "f78d7fa1-dd5e-4434-b2d0-870514e25784")
+		)
+		(instances
+			(project "12StepperPCB"
+			(path "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/cf368c5f-16d2-4298-b987-03b924d6d080"
+				(reference "J53")
+				(unit 1)
+			)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 175.26 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9914cc6d-d50f-42d2-a0b2-ac6df676f501")
+		(property "Reference" "D1"
+			(at 175.26 121 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SMBJ30A"
+			(at 175.26 133 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 175.26 127 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "SMBJ30A"
+			(at 175.26 127 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 175.26 127 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1"
+			(uuid "a2e6dc0a-5622-4f58-b878-fb5bd7cf0105")
+		)
+		(pin "2"
+			(uuid "9d7d7177-6d4c-4b95-a359-d10acc74df2a")
+		)
+		(instances
+			(project "12StepperPCB"
+			(path "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/cf368c5f-16d2-4298-b987-03b924d6d080"
+				(reference "D1")
+				(unit 1)
+			)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 137.16 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30d8cc50-aaf2-4b97-8518-ddfac35ed7e2")
+		(property "Reference" "C37"
+			(at 137.16 146.4 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1000uF/50V"
+			(at 137.16 158.4 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
+			(at 137.16 152.4 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "EEU-FR1H102"
+			(at 137.16 152.4 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 137.16 152.4 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1"
+			(uuid "d31b687f-79c2-4bba-9c8e-266e35806431")
+		)
+		(pin "2"
+			(uuid "d3dff7c0-e84e-4e8b-882e-e97c1aabe8cf")
+		)
+		(instances
+			(project "12StepperPCB"
+			(path "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/cf368c5f-16d2-4298-b987-03b924d6d080"
+				(reference "C37")
+				(unit 1)
+			)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 213.36 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b1ee74d-a238-4451-b336-de00904edb60")
+		(property "Reference" "C38"
+			(at 213.36 95.6 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1000uF/50V"
+			(at 213.36 107.6 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
+			(at 213.36 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "EEU-FR1H102"
+			(at 213.36 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 213.36 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1"
+			(uuid "8e25218e-db9e-48e4-9c17-17be25c4e84d")
+		)
+		(pin "2"
+			(uuid "fd003a8a-9dad-4ff2-987d-543b7136fe10")
+		)
+		(instances
+			(project "12StepperPCB"
+			(path "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/cf368c5f-16d2-4298-b987-03b924d6d080"
+				(reference "C38")
+				(unit 1)
+			)
+			)
+		)
+	)
+	(wire
+		(pts (xy 55.88 50.8) (xy 52.07 50.8))
+		(stroke (width 0) (type solid))
+		(uuid "cd182b84-4442-465d-b600-45ae2dd32154")
+	)
+	(global_label "VDD_5V"
+		(shape passive)
+		(at 52.07 50.8 180)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "2a5da880-1cda-43bd-9dab-68667ce23942")
+	)
+	(wire
+		(pts (xy 55.88 53.34) (xy 52.07 53.34))
+		(stroke (width 0) (type solid))
+		(uuid "7e203267-581d-49f6-bcd3-65a23a0f1ed9")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 52.07 53.34 180)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "7a5ac8ec-cdec-46ac-a25d-ec09b0abc957")
+	)
+	(wire
+		(pts (xy 132.08 50.8) (xy 128.27 50.8))
+		(stroke (width 0) (type solid))
+		(uuid "56e29c92-fa57-4109-89fd-1b2c66eb681b")
+	)
+	(global_label "VMOT_BUS"
+		(shape passive)
+		(at 128.27 50.8 180)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "c00a794b-3834-40db-9321-27dd333893f5")
+	)
+	(wire
+		(pts (xy 132.08 53.34) (xy 128.27 53.34))
+		(stroke (width 0) (type solid))
+		(uuid "1a164ba0-fef1-4145-9f92-fd7d943889eb")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 128.27 53.34 180)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a0f0c06d-8f58-441b-b47a-3712d3adb425")
+	)
+				(wire
+		(pts (xy 208.28 50.8) (xy 204.47 50.8))
+		(stroke (width 0) (type solid))
+		(uuid "b820ed62-d9e9-4efe-8927-8709dc419887")
+	)
+	(global_label "VMOT_BUS"
+		(shape passive)
+		(at 204.47 50.8 180)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "1ca840ba-2690-4215-919d-1653e325c79e")
+	)
+	(wire
+		(pts (xy 208.28 53.34) (xy 204.47 53.34))
+		(stroke (width 0) (type solid))
+		(uuid "d6698794-cafa-46b5-a005-add5ef89ff63")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 204.47 53.34 180)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "13637d66-f709-4916-8412-d2beba43ab13")
+	)
+	(wire
+		(pts (xy 175.26 123.19) (xy 175.26 119.38))
+		(stroke (width 0) (type solid))
+		(uuid "5bb31c3e-0a3a-45fb-98c1-9043d3b8bb40")
+	)
+	(global_label "VMOT_BUS"
+		(shape passive)
+		(at 175.26 119.38 270)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "09b71f7b-dfeb-4f73-90b2-4bb9e72a9bce")
+	)
+	(wire
+		(pts (xy 175.26 130.81) (xy 175.26 134.62))
+		(stroke (width 0) (type solid))
+		(uuid "465f2dd8-0b51-4c14-a10b-80ea9607ca6f")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 175.26 134.62 90)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "db0e286b-6f91-412d-af89-c6e672befc7d")
+	)
+	(wire
+		(pts (xy 137.16 148.59) (xy 137.16 144.78))
+		(stroke (width 0) (type solid))
+		(uuid "c0be5ec8-69a4-4268-b1e9-10af97c58e3a")
+	)
+	(global_label "VMOT_BUS"
+		(shape passive)
+		(at 137.16 144.78 270)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "df288a20-3ac7-461f-9e13-b792e8b9f447")
+	)
+	(wire
+		(pts (xy 137.16 156.21) (xy 137.16 160.02))
+		(stroke (width 0) (type solid))
+		(uuid "3893b806-c5d3-4786-a5eb-7519b4ff3151")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 137.16 160.02 90)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "f4228766-a305-4eef-beb5-87b210858d78")
+	)
+	(wire
+		(pts (xy 213.36 97.79) (xy 213.36 93.98))
+		(stroke (width 0) (type solid))
+		(uuid "608fdfc4-6450-45ba-a23b-63ca629d4b44")
+	)
+	(global_label "VMOT_BUS"
+		(shape passive)
+		(at 213.36 93.98 270)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "f0752d15-1376-4804-867e-52b1295cb1fe")
+	)
+	(wire
+		(pts (xy 213.36 105.41) (xy 213.36 109.22))
+		(stroke (width 0) (type solid))
+		(uuid "dccc3cfd-0d95-4979-ae31-6655c4f6cbb9")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 213.36 109.22 90)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6e29d989-da39-44b3-b198-05fb614a8fa8")
+	)
+	(text "VMOT: 30V max, 12A bus (1A/ch target). Dual entry, second terminal unfused --\nfor low-resistance current injection only, not a redundant protection path.\nA4988 max 35V; TMC2209 max 28V operating (29V abs max). Above 28V: A4988-only.\nFuse footprint left TBD -- confirm blade-fuse holder or polyfuse P/N before layout."
+		(at 137.16 30.48 0)
+		(effects (font (size 1.5 1.5)))
+		(uuid "a4865cf3-230c-40d0-a20b-834294907c9d")
+	)
+	(embedded_fonts no)
+)

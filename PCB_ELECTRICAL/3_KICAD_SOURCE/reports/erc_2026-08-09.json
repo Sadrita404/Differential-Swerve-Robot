@@ -1,0 +1,111 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-09T02:05:46",
+    "ignored_checks": [
+        {
+            "description": "Label connected to only one pin",
+            "key": "isolated_pin_label"
+        },
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/cf368c5f-16d2-4298-b987-03b924d6d080",
+            "violations": []
+        },
+        {
+            "path": "/Channel1/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/1ff6f4e7-afd1-43a8-884c-947251605d45",
+            "violations": []
+        },
+        {
+            "path": "/Channel2/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/7fdf67cc-24ec-4e3f-bb37-19ea88cac997",
+            "violations": []
+        },
+        {
+            "path": "/Channel3/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/4105a4d1-b73a-425e-8db0-b59db829b186",
+            "violations": []
+        },
+        {
+            "path": "/Channel4/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/0bf243f5-3b29-45a0-b05f-a2a7b3e53185",
+            "violations": []
+        },
+        {
+            "path": "/Channel5/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/e5a58253-7364-47ba-8e84-bde349029cd4",
+            "violations": []
+        },
+        {
+            "path": "/Channel6/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/74b54748-8d8f-4990-b1e9-cd50191fa00e",
+            "violations": []
+        },
+        {
+            "path": "/Channel7/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/1b64526e-8e3c-4af1-9eaf-c5458d673fe3",
+            "violations": []
+        },
+        {
+            "path": "/Channel8/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/e0b50390-a95d-409c-8440-60a156f9b8a4",
+            "violations": []
+        },
+        {
+            "path": "/Channel9/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/31461d79-7890-4204-a514-d313fa5da857",
+            "violations": []
+        },
+        {
+            "path": "/Channel10/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/6ba33995-548d-4b36-bc67-437c94bfae56",
+            "violations": []
+        },
+        {
+            "path": "/Channel11/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/88fdb5d3-c272-4e7b-ac1a-8e43143e9aa7",
+            "violations": []
+        },
+        {
+            "path": "/Channel12/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/4519d875-7afb-42dc-b3da-ef602962cc0b",
+            "violations": []
+        },
+        {
+            "path": "/Control/",
+            "uuid_path": "/d18b2396-5c5c-4b4d-8237-92f1cb3f5134/50b47eb7-4f0b-46b0-b331-2d372d4d8124",
+            "violations": []
+        }
+    ],
+    "source": "12StepperPCB.kicad_sch"
+}
